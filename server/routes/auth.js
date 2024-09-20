@@ -48,8 +48,8 @@ router.post("/", async (req, res) => {
       }
 
       return res
-        .status(400)
-        .send({ message: "An Email sent to your account, please verify" });
+        .status(201)
+        .send({ message: "An Email sent to your account, Please verify." });
     }
 
     const token = user.generateAuthToken();
