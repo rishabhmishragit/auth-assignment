@@ -54,7 +54,7 @@ router.get("/:id/verify/:token/", async (req, res) => {
 
     res.status(200).send({ message: "Email verified successfully" });
   } catch (error) {
-    console.log("eroroor", error);
+    console.log("error", error);
     res.status(500).send({ message: "Internal Server Error" });
   }
 });
