@@ -21,8 +21,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url =
-        "https://auth-assignment-bje2yome5-rishabh-mishras-projects-c49412f3.vercel.app/api/auth";
+      const url = "https://auth-assignment-bay.vercel.app/api/auth";
       const { data: res } = await axios.post(url, loginData);
       localStorage.setItem("token", res.data);
       window.location = "/";
