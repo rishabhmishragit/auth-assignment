@@ -4,7 +4,6 @@ import cors from "cors";
 import connectDB from "./db.js";
 import UserRoutes from "./routes/users.js";
 import AuthRoutes from "./routes/auth.js";
-console.log("kjdflkjdlkjlfjlkdj=========>");
 dotenv.config({});
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -14,8 +13,7 @@ connectDB();
 
 //middlewares
 app.use(express.json());
-app.use(cors());
-console.log("====================================>>>>");
+app.use(cors({ origin: true }));
 //routes
 app.use("/api/users", UserRoutes);
 app.use("/api/auth", AuthRoutes);
