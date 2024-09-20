@@ -1,5 +1,13 @@
+.container {
+  width: 100%;
+  background-color: #3bb19b;
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+}
+
 .home {
-  text-color: black;
+  margin-left: 5px;
 }
 
 .white_btn {
@@ -12,5 +20,5 @@
   font-weight: bold;
   font-size: 14px;
   cursor: pointer;
-  margin-right: 20px;
+  margin: 20px;
 }

@@ -7,10 +7,12 @@ const Home = () => {
   };
   return (
     <>
-      <div className={styles.home}>Logged In Successfully</div>;
-      <button className={styles.white_btn} onClick={handleLogout}>
-        Logout
-      </button>
+      <div className={styles.container}>
+        <p className={styles.home}>Logged In Successfully</p>;
+        <button className={styles.white_btn} onClick={handleLogout}>
+          Logout
+        </button>
+      </div>
     </>
   );
 };
