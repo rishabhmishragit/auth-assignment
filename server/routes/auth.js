@@ -48,7 +48,7 @@ router.post("/", async (req, res) => {
       }
 
       return res
-        .status(201)
+        .status(400)
         .send({ message: "An Email sent to your account, Please verify." });
     }
 
